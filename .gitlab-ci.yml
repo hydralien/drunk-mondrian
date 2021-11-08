@@ -1,0 +1,18 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+pages:
+  tags:
+    - docker
+  script:
+    - npm install
+    - npm run build #--dest=public --no-clean
+    - cp -rf dist/* public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

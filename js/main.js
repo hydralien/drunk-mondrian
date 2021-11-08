@@ -6,13 +6,15 @@ let delay = 30;
 
 const border = 70;
 const defaultStep = 1; // position increment
-const velocityJump = 20;
+const velocityJumpMagnitude = 20;
 
 function drawNextEventual(context, posX, posY, velX, velY, targetVelX, targetVelY) {
   if (Math.abs(velX) >= Math.abs(targetVelX)) {
+    const velocityJump = Math.random() * velocityJumpMagnitude;
     targetVelX = Math.random() * velocityJump * (Math.random() > 0.5 ? 1 : -1);
   }
   if (Math.abs(velY) >= Math.abs(targetVelY)) {
+    const velocityJump = Math.random() * velocityJumpMagnitude;
     targetVelY = Math.random() * velocityJump * (Math.random() > 0.5 ? 1 : -1);
   }
 

@@ -5,6 +5,12 @@ I originally wanted to make it a hand drawing and watercolor painting, but then 
 
 So here it is, hosted on GitHub Pages: https://hydralien.github.io/drunk-mondrian/
 
+The idea is to:
+- let it draw for a while (could be sped up),
+- then stop drawing,
+- and start painting - it'd put several random colors in random places till you stop it
+- it could be done simultaneously, but the results are a bit less nice as it'd draw over colors
+
 And here's a couple of examples:
 
 ![A screenshot](img/screenshot.png)
